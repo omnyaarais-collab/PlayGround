@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fff8e9">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%99%3C/text%3E%3C/svg%3E">
+<title>أمنية تجمع العملات</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap');
+:root{--ink:#252c49;--muted:#777f99;--coral:#ff765e;--gold:#ffca55;--cream:#fff8e9;--mint:#bce9cf}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% 0%,#fffdf7 0,#fff8e9 57%,#ffefd8 100%);color:var(--ink);font-family:'Baloo Bhaijaan 2',system-ui,sans-serif;display:flex;justify-content:center;align-items:center;padding:22px;overflow-x:hidden}.page{width:min(100%,1080px);position:relative}.topbar{display:flex;align-items:center;justify-content:space-between;margin:0 auto 15px;max-width:980px;padding:0 6px}.brand{display:flex;align-items:center;gap:12px}.brand-mark{width:48px;height:48px;border-radius:17px;background:#ffe4a0;display:grid;place-items:center;font-size:26px;box-shadow:0 5px 0 #f4cd76}.brand h1{font-size:clamp(20px,3vw,27px);line-height:1;margin:0;font-weight:800}.brand p{margin:4px 0 0;color:var(--muted);font-size:14px}.top-note{font-size:14px;color:#8a8190;background:#fffdf7;border:1px solid #f1e8d7;border-radius:99px;padding:8px 15px}.game-shell{position:relative;max-width:980px;margin:auto;border:8px solid #fffdf7;border-radius:30px;overflow:hidden;box-shadow:0 22px 55px #81634624,0 5px 0 #ecd9b8;background:#b9e8ef}.game-shell:after{content:"";position:absolute;inset:0;border:1px solid #ffffff99;border-radius:22px;pointer-events:none}.canvas-wrap{position:relative;width:100%;aspect-ratio:16/9;min-height:250px}canvas{display:block;width:100%;height:100%;touch-action:none}.hud{position:absolute;top:17px;left:18px;right:18px;display:flex;justify-content:space-between;align-items:flex-start;pointer-events:none;direction:ltr}.hud-group{display:flex;gap:9px;direction:ltr}.pill{min-width:100px;background:#fffdf0ed;color:var(--ink);border:1px solid #ffffffbd;border-radius:17px;padding:7px 14px;box-shadow:0 4px 0 #c6a88945;display:flex;align-items:center;gap:9px;font-weight:800;font-size:17px;direction:rtl}.pill small{display:block;color:#9a8b7b;font-size:11px;line-height:1.05;font-weight:600}.coin-icon{width:25px;height:25px;border-radius:50%;display:grid;place-items:center;color:#ab6500;background:linear-gradient(145deg,#ffe780,#ffb92f);border:2px solid #fff1a8;box-shadow:0 2px 3px #bf770955;font-size:14px}.icon-button{width:43px;height:43px;border:0;border-radius:15px;background:#fffdf0ed;color:var(--ink);font:700 19px 'Baloo Bhaijaan 2',sans-serif;box-shadow:0 4px 0 #c6a88945;pointer-events:auto;cursor:pointer;transition:transform .15s,background .15s}.icon-button:hover{transform:translateY(-2px);background:white}.overlay{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(180deg,#fff8e933,#f8e9d466);transition:opacity .25s,visibility .25s;z-index:2}.overlay.hidden{opacity:0;visibility:hidden;pointer-events:none}.card{width:min(88%,410px);text-align:center;background:#fffdf7f2;border:2px solid #fff;border-radius:28px;padding:22px 28px 20px;box-shadow:0 15px 35px #61482d28;animation:pop .35s ease-out}.card .emoji{font-size:42px;line-height:1;margin-bottom:4px;filter:drop-shadow(0 3px 0 #f2d89e)}.card h2{margin:0;color:var(--ink);font-size:clamp(24px,4vw,34px);line-height:1.25;font-weight:800}.card p{margin:8px auto 15px;color:#777c91;line-height:1.65;font-size:15px;max-width:320px}.primary{border:0;border-radius:16px;background:var(--coral);color:white;padding:10px 29px;font:700 19px 'Baloo Bhaijaan 2',sans-serif;box-shadow:0 5px 0 #dc5747;cursor:pointer;transition:transform .15s,box-shadow .15s}.primary:hover{transform:translateY(-2px);box-shadow:0 7px 0 #dc5747}.primary:active{transform:translateY(3px);box-shadow:0 2px 0 #dc5747}.hint{font-size:12px!important;margin:13px 0 0!important;color:#aaa08e!important}.bottom-row{max-width:980px;margin:17px auto 0;display:flex;align-items:center;justify-content:space-between;gap:15px}.instructions{color:#7d7b85;font-size:14px;display:flex;align-items:center;gap:9px}.key{display:inline-grid;place-items:center;background:#fffdf7;border:1px solid #eee4d5;border-bottom:3px solid #e3d3bd;border-radius:8px;padding:2px 8px;color:#4b5066;font-weight:700;font-size:12px}.mobile-controls{display:none;gap:10px;direction:ltr}.control{width:54px;height:48px;border:0;border-radius:16px;background:#fffdf7;color:#51566d;font-size:23px;box-shadow:0 4px 0 #e7d8c3;touch-action:none;user-select:none}.control.jump{width:90px;background:#ffdd8a;color:#80520a;font:700 15px 'Baloo Bhaijaan 2',sans-serif}.control:active{transform:translateY(3px);box-shadow:0 1px 0 #e7d8c3}.footer{position:absolute;bottom:-37px;left:0;right:0;text-align:center;color:#ad9e88;font-size:12px}@keyframes pop{from{transform:translateY(10px) scale(.96);opacity:0}to{transform:none;opacity:1}}
+@media(max-width:650px){body{padding:12px 10px 20px;align-items:flex-start}.page{margin:auto 0}.topbar{margin-bottom:10px}.brand-mark{width:41px;height:41px;border-radius:14px}.brand p{font-size:12px}.top-note{font-size:11px;padding:6px 10px}.game-shell{border-width:5px;border-radius:21px}.canvas-wrap{min-height:0}.hud{top:10px;left:10px;right:10px}.pill{min-width:72px;padding:5px 9px;border-radius:13px;font-size:14px;gap:6px}.pill small{font-size:9px}.coin-icon{width:21px;height:21px;font-size:12px}.icon-button{width:36px;height:36px;border-radius:12px;font-size:16px}.bottom-row{margin-top:13px;justify-content:center}.instructions{display:none}.mobile-controls{display:flex}.footer{display:none}.card{padding:17px 18px 15px;border-radius:21px}.card .emoji{font-size:32px}.card p{font-size:13px;margin:5px auto 10px}.primary{font-size:16px;padding:7px 24px}.hint{font-size:10px!important;margin-top:8px!important}}
+@media(max-width:400px){.top-note{max-width:115px;text-align:center;line-height:1.2}.brand h1{font-size:19px}.card{width:90%}}
+</style>
+</head>
+<body>
+<main class="page">
+  <header class="topbar">
+    <div class="brand"><div class="brand-mark">🌙</div><div><h1>أمنية تجمع العملات</h1><p>مغامرة صغيرة.. وأحلام كبيرة!</p></div></div>
+    <div class="top-note">✨ اجمعي أكبر عدد من العملات</div>
+  </header>
+  <section class="game-shell" aria-label="لعبة أمنية تجمع العملات">
+    <div class="canvas-wrap"><canvas id="game" aria-label="أمنية تركض وتقفز لتجمع العملات وتتجنب الصناديق"></canvas>
+      <div class="hud">
+        <div class="hud-group"><button class="icon-button" id="soundBtn" aria-label="تشغيل أو إيقاف الصوت" title="الصوت">♪</button><button class="icon-button" id="pauseBtn" aria-label="إيقاف مؤقت" title="إيقاف مؤقت">Ⅱ</button></div>
+        <div class="pill"><span class="coin-icon">★</span><div><small>عملاتي</small><span id="score">٠</span></div></div>
+      </div>
+      <div class="overlay" id="overlay"><div class="card"><div class="emoji" id="cardEmoji">🪙</div><h2 id="cardTitle">جاهزة يا أمنية؟</h2><p id="cardText">اقفزي فوق الصناديق واجمعي العملات الذهبية في طريقك!</p><button class="primary" id="playBtn">ابدئي اللعب</button><p class="hint" id="cardHint">اضغطي مسافة أو ↑ للقفز · على الجوال استخدمي زر اقفزي</p></div></div>
+    </div>
+  </section>
+  <div class="bottom-row"><div class="instructions"><span>للجري</span><span class="key">← →</span><span>للقفز</span><span class="key">مسافة / ↑</span><span>قفزة مزدوجة!</span></div><div class="mobile-controls"><button class="control" id="leftBtn" aria-label="تحركي لليسار">◀</button><button class="control jump" id="jumpBtn" aria-label="اقفزي">اقفزي ✨</button><button class="control" id="rightBtn" aria-label="تحركي لليمين">▶</button></div></div>
+  <div class="footer">صُنعت بحب لأمنية الصغيرة ✨</div>
+</main>
+<script>
+(()=>{
+const canvas=document.getElementById('game'),ctx=canvas.getContext('2d');
+const W=960,H=540,ground=426;
+let dpr=1,state='ready',score=0,best=Number(localStorage.getItem('omnya-best')||0),speed=5.1,frame=0,last=0,spawnTimer=0,coinTimer=0,shake=0,soundOn=false,audio;
+const player={x:170,y:ground-68,w:52,h:68,vy:0,jumps:0,run:0,tilt:0};
+let obstacles=[],coins=[],particles=[],keys={};
+const $=id=>document.getElementById(id);const digits=n=>String(n).replace(/[0-9]/g,x=>'٠١٢٣٤٥٦٧٨٩'[x]);
+function resize(){const r=canvas.getBoundingClientRect();dpr=Math.min(devicePixelRatio||1,2);canvas.width=Math.round(r.width*dpr);canvas.height=Math.round(r.height*dpr);ctx.setTransform(canvas.width/W,0,0,canvas.height/H,0,0)}
+new ResizeObserver(resize).observe(canvas);resize();
+function rounded(x,y,w,h,r,color){ctx.fillStyle=color;ctx.beginPath();ctx.roundRect(x,y,w,h,r);ctx.fill()}
+function cloud(x,y,s){ctx.fillStyle='#ffffffa8';ctx.beginPath();ctx.ellipse(x,y,38*s,15*s,0,0,Math.PI*2);ctx.ellipse(x-20*s,y+3*s,20*s,12*s,0,0,Math.PI*2);ctx.ellipse(x+19*s,y+4*s,23*s,11*s,0,0,Math.PI*2);ctx.fill()}
+function drawBackground(){
+ const g=ctx.createLinearGradient(0,0,0,H);g.addColorStop(0,'#a9dce8');g.addColorStop(.7,'#e1f2de');g.addColorStop(1,'#f9d99d');ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
+ // soft sun
+ ctx.fillStyle='#fff0b5';ctx.beginPath();ctx.arc(754,116,48,0,7);ctx.fill();ctx.fillStyle='#fff8d3';ctx.beginPath();ctx.arc(754,116,36,0,7);ctx.fill();
+ cloud((90-frame*.18%(W+160)+W+160)%(W+160)-70,112,1);cloud((480-frame*.11%(W+180)+W+180)%(W+180)-70,76,.8);cloud((900-frame*.14%(W+180)+W+180)%(W+180)-70,165,.65);
+ // distant hills
+ ctx.fillStyle='#a8d7b4';ctx.beginPath();ctx.moveTo(0,340);for(let x=0;x<=W;x+=120)ctx.quadraticCurveTo(x+60,250+Math.sin(x*.025)*22,x+120,340);ctx.lineTo(W,H);ctx.lineTo(0,H);ctx.fill();
+ ctx.fillStyle='#82c69d';ctx.beginPath();ctx.moveTo(0,378);for(let x=0;x<=W;x+=140)ctx.quadraticCurveTo(x+70,298+Math.sin(x*.021+1)*20,x+140,378);ctx.lineTo(W,H);ctx.lineTo(0,H);ctx.fill();
+ // small far trees
+ for(let i=0;i<8;i++){let x=((i*155-frame*.4)%(W+100)+W+100)%(W+100)-30;ctx.fillStyle='#63ad83';ctx.fillRect(x,329,8,44);ctx.fillStyle=i%2?'#73bf8c':'#5caf81';ctx.beginPath();ctx.arc(x+4,321,22,0,7);ctx.fill();ctx.beginPath();ctx.arc(x-9,333,14,0,7);ctx.fill()}
+ // path & grassy edge
+ ctx.fillStyle='#e7bb79';ctx.fillRect(0,ground,W,H-ground);ctx.fillStyle='#78bd76';ctx.fillRect(0,ground,W,13);ctx.fillStyle='#94d17f';ctx.fillRect(0,ground,W,5);
+ ctx.fillStyle='#d9a968';for(let i=0;i<20;i++){let x=((i*67-frame*1.6)%(W+20)+W+20)%(W+20);ctx.beginPath();ctx.ellipse(x,ground+30+(i%3)*29,3,2,0,0,7);ctx.fill()}
+ // foreground flowers
+ for(let i=0;i<10;i++){let x=((i*127-frame*1.4)%(W+70)+W+70)%(W+70)-25;const y=ground-3-(i%3)*5;ctx.strokeStyle='#509b68';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(x,y-10);ctx.stroke();ctx.fillStyle=i%2?'#fff4d2':'#ffd77b';ctx.beginPath();ctx.arc(x,y-12,4,0,7);ctx.fill();ctx.fillStyle='#ec936a';ctx.beginPath();ctx.arc(x,y-12,1.5,0,7);ctx.fill()}
+}
+function drawPlayer(){
+ const p=player;ctx.save();ctx.translate(p.x+p.w/2,p.y+p.h/2);if(shake>0)ctx.translate((Math.random()-.5)*shake,(Math.random()-.5)*shake);ctx.rotate(p.tilt);
+ const running=state==='playing'&&p.y>=ground-p.h-1, swing=running?Math.sin(p.run)*8:0;
+ // shadow
+ ctx.fillStyle='#597d6240';ctx.beginPath();ctx.ellipse(0,37,29,6,0,0,7);ctx.fill();
+ // legs + shoes
+ ctx.strokeStyle='#593e4c';ctx.lineWidth=8;ctx.lineCap='round';ctx.beginPath();ctx.moveTo(-8,18);ctx.lineTo(-10+swing,31);ctx.lineTo(-16+swing,34);ctx.moveTo(8,18);ctx.lineTo(10-swing,31);ctx.lineTo(17-swing,34);ctx.stroke();
+ rounded(-24+swing,29,17,8,4,'#f5765e');rounded(8-swing,29,17,8,4,'#f5765e');
+ // dress
+ ctx.fillStyle='#f47768';ctx.beginPath();ctx.moveTo(-14,-10);ctx.quadraticCurveTo(0,-18,14,-10);ctx.lineTo(22,22);ctx.quadraticCurveTo(0,29,-22,22);ctx.closePath();ctx.fill();ctx.fillStyle='#ff9b7c';ctx.beginPath();ctx.ellipse(0,9,13,3,0,0,7);ctx.fill();
+ // sleeves/arms
+ ctx.strokeStyle='#ffd2a2';ctx.lineWidth=7;ctx.beginPath();ctx.moveTo(-13,-6);ctx.lineTo(-21,7+swing*.5);ctx.moveTo(13,-6);ctx.lineTo(21,5-swing*.5);ctx.stroke();ctx.fillStyle='#ffd2a2';ctx.beginPath();ctx.arc(-21,8+swing*.5,4,0,7);ctx.arc(21,6-swing*.5,4,0,7);ctx.fill();
+ // head
+ ctx.fillStyle='#ffd2a2';ctx.beginPath();ctx.ellipse(0,-23,18,21,0,0,7);ctx.fill();
+ // hair cap / headband
+ ctx.fillStyle='#513e61';ctx.beginPath();ctx.arc(0,-27,19,Math.PI,0);ctx.quadraticCurveTo(20,-8,12,-7);ctx.quadraticCurveTo(6,-14,0,-13);ctx.quadraticCurveTo(-8,-12,-15,-7);ctx.quadraticCurveTo(-20,-14,-19,-25);ctx.fill();
+ ctx.fillStyle='#ffcf68';ctx.beginPath();ctx.arc(-2,-42,5,0,7);ctx.fill();
+ // face
+ ctx.fillStyle='#38334c';ctx.beginPath();ctx.ellipse(-6,-23,1.7,2.4,0,0,7);ctx.ellipse(6,-23,1.7,2.4,0,0,7);ctx.fill();ctx.strokeStyle='#bd695b';ctx.lineWidth=1.6;ctx.beginPath();ctx.arc(0,-18,4,0.2,2.9);ctx.stroke();ctx.fillStyle='#ff9d90';ctx.beginPath();ctx.arc(-11,-18,3,0,7);ctx.arc(11,-18,3,0,7);ctx.fill();
+ // little scarf flap
+ ctx.fillStyle='#6b5683';ctx.beginPath();ctx.moveTo(10,-38);ctx.quadraticCurveTo(28,-33,23,-14);ctx.quadraticCurveTo(18,-20,13,-23);ctx.fill();
+ ctx.restore();
+}
+function drawCoin(c){const bob=Math.sin(frame*.09+c.phase)*4;ctx.save();ctx.translate(c.x,c.y+bob);const sx=Math.max(.22,Math.abs(Math.cos(frame*.07+c.phase)));ctx.scale(sx,1);ctx.fillStyle='#ed9d27';ctx.beginPath();ctx.ellipse(0,1,13,16,0,0,7);ctx.fill();ctx.fillStyle='#ffd34d';ctx.beginPath();ctx.ellipse(0,-1,10.5,14,0,0,7);ctx.fill();ctx.strokeStyle='#fff0a0';ctx.lineWidth=2;ctx.beginPath();ctx.ellipse(0,-1,6,9,0,0,7);ctx.stroke();ctx.fillStyle='#fff8c4';ctx.beginPath();ctx.arc(-4,-7,2.5,0,7);ctx.fill();ctx.restore()}
+function drawObstacle(o){ctx.save();ctx.translate(o.x,o.y);if(o.type==='box'){rounded(0,0,o.w,o.h,8,'#a96846');rounded(4,4,o.w-8,o.h-8,6,'#cf8b56');ctx.strokeStyle='#9f6047';ctx.lineWidth=4;ctx.beginPath();ctx.moveTo(9,8);ctx.lineTo(o.w-9,o.h-8);ctx.moveTo(o.w-9,8);ctx.lineTo(9,o.h-8);ctx.stroke();ctx.fillStyle='#e8a56a';ctx.beginPath();ctx.arc(10,10,2,0,7);ctx.arc(o.w-10,10,2,0,7);ctx.fill()}else{ctx.fillStyle='#4b9d69';ctx.beginPath();ctx.ellipse(o.w/2,o.h/2,o.w/2,o.h/2,0,0,7);ctx.fill();ctx.fillStyle='#73c381';ctx.beginPath();ctx.arc(o.w*.35,o.h*.35,7,0,7);ctx.arc(o.w*.7,o.h*.65,5,0,7);ctx.fill()}ctx.restore()}
+function draw(){ctx.clearRect(0,0,W,H);drawBackground();coins.forEach(drawCoin);obstacles.forEach(drawObstacle);drawPlayer();particles.forEach(p=>{ctx.globalAlpha=Math.max(0,p.life/35);ctx.fillStyle=p.color;ctx.beginPath();ctx.arc(p.x,p.y,p.size,0,7);ctx.fill();ctx.globalAlpha=1});if(state==='ready'){ctx.fillStyle='#fffdf7';ctx.font='700 18px "Baloo Bhaijaan 2", sans-serif';ctx.textAlign='center';ctx.fillText('✨ أمنية مستعدة للمغامرة! ✨',W/2,255)}}
+function start(){score=0;speed=5.1;frame=0;spawnTimer=65;coinTimer=25;obstacles=[];coins=[];particles=[];player.y=ground-player.h;player.vy=0;player.jumps=0;player.run=0;player.tilt=0;state='playing';$('score').textContent=digits(0);$('overlay').classList.add('hidden');$('pauseBtn').textContent='Ⅱ';last=performance.now()}
+function end(){state='over';shake=9;best=Math.max(best,score);localStorage.setItem('omnya-best',best);$('cardEmoji').textContent='🌟';$('cardTitle').textContent='أحسنتِ يا أمنية!';$('cardText').innerHTML=`جمعتي <b>${digits(score)}</b> عملة! ${best>score?'أفضل نتيجة: '+digits(best)+' عملة ✨':'رقم قياسي جديد! يا سلام! 🎉'}`;$('playBtn').textContent='العبي مرة أخرى';$('cardHint').textContent='اضغطي مسافة للعب من جديد';$('overlay').classList.remove('hidden');$('pauseBtn').textContent='Ⅱ';playTone(180,.13)}
+function jump(){if(state==='ready'||state==='over'){start();return}if(state!=='playing')return;if(player.jumps<2){player.vy=player.jumps===0?-14.6:-12.5;player.jumps++;playTone(380,.06)}}
+function addCoin(x,y){coins.push({x,y,phase:Math.random()*6})}
+function burst(x,y,color,n=8){for(let i=0;i<n;i++)particles.push({x,y,vx:(Math.random()-.5)*5,vy:(Math.random()-.8)*5,life:25+Math.random()*15,size:2+Math.random()*4,color})}
+function update(dt){if(state!=='playing')return;const step=Math.min(dt/16.67,2);frame+=step;speed=Math.min(9.4,5.1+score*.012);player.run+=.22*step;
+ if(keys.left)player.x=Math.max(72,player.x-4.1*step);if(keys.right)player.x=Math.min(310,player.x+4.1*step);
+ player.vy+=.72*step;player.y+=player.vy*step;if(player.y>=ground-player.h){player.y=ground-player.h;player.vy=0;player.jumps=0}player.tilt=player.vy<0?-.08:player.vy>5?.08:0;
+ spawnTimer-=step;if(spawnTimer<=0){const box=Math.random()<.78;const h=box?38+Math.random()*16:27;obstacles.push({x:W+30,y:ground-h,w:box?43+Math.random()*14:40,h,type:box?'box':'bush'});spawnTimer=Math.max(74,108-Math.min(score,22)*1.1)+Math.random()*32;}
+ coinTimer-=step;if(coinTimer<=0){const startX=W+45, baseY=Math.random()<.48?ground-102:ground-158;const count=4+Math.floor(Math.random()*3);for(let i=0;i<count;i++)addCoin(startX+i*43,baseY-Math.sin(i/(count-1)*Math.PI)*18);coinTimer=140+Math.random()*95;}
+ obstacles.forEach(o=>o.x-=speed*step);coins.forEach(c=>c.x-=speed*step);obstacles=obstacles.filter(o=>o.x+o.w>-5);coins=coins.filter(c=>c.x>-20);
+ for(let i=coins.length-1;i>=0;i--){const c=coins[i];if(Math.abs(c.x-(player.x+player.w/2))<27&&Math.abs(c.y+Math.sin(frame*.09+c.phase)*4-(player.y+player.h/2))<31){score++;$('score').textContent=digits(score);burst(c.x,c.y,'#ffd44e',7);coins.splice(i,1);playTone(650,.045)}}
+ for(const o of obstacles){if(player.x+player.w-7>o.x+5&&player.x+9<o.x+o.w-5&&player.y+player.h-5>o.y+7){end();break}}
+ particles.forEach(p=>{p.x+=p.vx*step;p.y+=p.vy*step;p.vy+=.12*step;p.life-=step});particles=particles.filter(p=>p.life>0);shake=Math.max(0,shake-step);
+}
+function loop(t){const dt=t-last||16.67;last=t;update(dt);draw();requestAnimationFrame(loop)}requestAnimationFrame(loop);
+function playTone(freq,duration){if(!soundOn)return;try{audio=audio||new(window.AudioContext||window.webkitAudioContext)();const osc=audio.createOscillator(),gain=audio.createGain();osc.type='sine';osc.frequency.value=freq;gain.gain.setValueAtTime(.055,audio.currentTime);gain.gain.exponentialRampToValueAtTime(.001,audio.currentTime+duration);osc.connect(gain);gain.connect(audio.destination);osc.start();osc.stop(audio.currentTime+duration)}catch(e){}}
+$('playBtn').addEventListener('click',start);$('pauseBtn').addEventListener('click',()=>{if(state==='playing'){state='paused';$('cardEmoji').textContent='⏸️';$('cardTitle').textContent='استراحة صغيرة';$('cardText').textContent='خدي نفس يا بطلة.. العملات مستنياكي!';$('playBtn').textContent='كمّلي اللعب';$('cardHint').textContent='اضغطي P أو زر الإيقاف للمتابعة';$('overlay').classList.remove('hidden')}else if(state==='paused'){state='playing';$('overlay').classList.add('hidden');$('pauseBtn').textContent='Ⅱ';last=performance.now()}});
+$('soundBtn').addEventListener('click',()=>{soundOn=!soundOn;$('soundBtn').textContent=soundOn?'♫':'♪';if(soundOn)playTone(520,.08)});
+window.addEventListener('keydown',e=>{if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' '].includes(e.key))e.preventDefault();if(e.repeat)return;if([' ','ArrowUp','w','W'].includes(e.key))jump();if(e.key==='ArrowLeft'||e.key==='a')keys.left=true;if(e.key==='ArrowRight'||e.key==='d')keys.right=true;if(e.key.toLowerCase()==='p')$('pauseBtn').click()});window.addEventListener('keyup',e=>{if(e.key==='ArrowLeft'||e.key==='a')keys.left=false;if(e.key==='ArrowRight'||e.key==='d')keys.right=false});
+function hold(id,key){const el=$(id);el.addEventListener('pointerdown',e=>{e.preventDefault();keys[key]=true;el.setPointerCapture(e.pointerId)});['pointerup','pointercancel','lostpointercapture'].forEach(ev=>el.addEventListener(ev,()=>keys[key]=false))}hold('leftBtn','left');hold('rightBtn','right');$('jumpBtn').addEventListener('pointerdown',e=>{e.preventDefault();jump()});$('jumpBtn').addEventListener('click',e=>{if(e.detail===0)jump()});canvas.addEventListener('pointerdown',e=>{if(state==='playing')jump()});
+})();
+</script>
+</body>
+</html>
